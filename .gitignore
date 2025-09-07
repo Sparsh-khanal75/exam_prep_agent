@@ -205,3 +205,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- Streamlit ---
+.streamlit/
+
+# --- FastAPI / Uvicorn ---
+*.log
+
+# --- Data (don’t push big study files) ---
+data/*
+!data/sample_notes.pdf
