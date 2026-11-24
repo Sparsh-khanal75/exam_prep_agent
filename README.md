@@ -9,10 +9,10 @@ An AI study companion that will answer questions from your own notes, generate q
 ![Architecture diagram](architechture/diagram-export-9-7-2025-10_22_40-AM.png)
 
 ```
-Streamlit UI  ──HTTP──►  FastAPI backend
-                          ├─ pdf_loader.py   PDF → text chunks
-                          ├─ rag_service.py  embed chunks → FAISS index → retrieve top-k
-                          └─ routes/qa.py    question + retrieved context → Ollama → answer
+Streamlit UI  ──REST──►  FastAPI backend
+                          ├─ pdf_loader.py   PyPDF → LangChain text chunker
+                          ├─ rag_service.py  Hugging Face embeddings → FAISS vector DB → LangChain retriever
+                          └─ routes/qa.py    question + retrieved context → Ollama (Llama 3) → answer / quiz / flashcards
 ```
 
 ## Roadmap
