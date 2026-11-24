@@ -40,3 +40,7 @@ backend/services/rag_service.py embeddings + FAISS      (Phase 2)
 frontend/app.py                 Streamlit UI
 architechture/                  architecture diagrams
 ```
+
+## Author
+
+**Sparsh Khanal** · [GitHub](https://github.com/Sparsh-khanal75) · [LinkedIn](https://www.linkedin.com/in/Sparsh-khanal75)
