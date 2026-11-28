@@ -30,6 +30,10 @@ uvicorn backend.main:app --reload --port 8000     # terminal 1
 streamlit run frontend/app.py                      # terminal 2 → click "Ping Backend"
 ```
 
+Phase 1 running, with the Streamlit frontend reaching the FastAPI backend:
+
+![Exam Prep Agent Phase 1 UI](docs/screenshots/phase1-ui.png)
+
 ## Project structure
 
 ```
